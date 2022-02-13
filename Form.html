@@ -1,0 +1,106 @@
+<html>
+<head>
+<title></title>
+<style>
+textarea {
+  border-radius:12px;
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+  height: 70px; /* Высота поля в пикселах */
+  resize: none; /* Запрещаем изменять размер */
+} 
+button.submit {
+  border-radius:12px;
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 90%;
+  height: 100px;
+  background: #f2267b;
+  color: white;
+  font-size: 24px;
+  outline: none;
+  text-transform: uppercase;
+}
+button.reset {
+  border-radius:12px;
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 90%;
+  height: 100px;
+  background: #60e6c5;
+  color: white;
+  font-size: 24px;
+  outline: none;
+  text-transform: uppercase;
+}
+input.age {
+  border-radius:12px;
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="text"], input[type="email"] {
+  border-radius:12px;
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+lable{
+  font-family:sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+<center>
+<form enctype="multipart/form-data" method="post">
+<table width="700">
+    <tr>
+        <td colspan="2"><center><img width="50%" src="C:/Users/Seredrini/Desktop/Учёба/Web дизайн/ПР 1/Pic/logo.png"></center></td>
+    </tr>
+    <tr>
+        <td width="350"><center><lable>Имя</lable><input type="text" name="name" required placeholder="Ваше имя" required></center></td>
+        <td><center><lable>Фамилия</lable><input type="text" name="name" required placeholder="Ваша фамилия" required></center></td>
+    </tr>
+    <tr>
+        <td><center><input type="radio" name="name" > <lable>Мужской</lable></center></td>
+        <td><center><input type="radio" name="name"> <lable>Женский</lable></center></td>
+    </tr>
+    <tr>
+        <td colspan="2"><center><lable>Возраст</lable><input class="age" name="name" required placeholder="Ваш возраст" required pattern="^[ 0-9]+$"></center></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+		<center><lable>Информация</lable></center><textarea rows="10" cols="45" maxlength="500" placeholder="О себе" required></textarea>
+	</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+		<center><lable>Требования</lable></center><textarea rows="10" cols="45" maxlength="500" placeholder="Чего хотите от партнёра" required></textarea>
+	</td>
+    </tr>
+    <tr>
+        <td colspan="2"><center><lable>Email</lable> <input type="email" name="email" required></center></td>
+    </tr>
+    <tr>
+        <td><center><button type="reset" class="reset">Cбросить</button></center></td>
+        <td><center><button type="submit" class="submit">Отпарвить</button></center></td>
+    </tr>	
+</table>
+</form>
+</center>
+</body>
+</html>
